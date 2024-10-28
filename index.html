@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio Website Design | Codehal</title>
-
+    <!-- bx icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,12 +22,99 @@
 <body>
 
     <!-- header design -->
+     <header class="header">
+     <a href="#" class="logo">Portfolio.</a>
+
+     <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+     </nav>
+     <div class="bx bx-moon" id="darkMode-icon"></div>
+    </header>
 
     <!-- home section design -->
+     <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, Iam</h3>
+            <h1>John Doe</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ea illo perspiciatis ullam quibusdam sed repudiandae, et autem atque iste, pariatur voluptatibus accusantium delectus ipsa saepe. Doloribus eos officia commodi.</p>
+
+            <div class="social-media">
+                <a href=""><i class="bx bxl-facebook"></i></a>
+                <a href=""><i class="bx bxl-twitter"></i></a>
+                <a href=""><i class="bx bxl-instagram-alt"></i></a>
+                <a href=""><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn">Download Resume</a>
+        </div>
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class="bx bx-code-alt"></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class="bx bx-camera"></i>
+                    <h3>Photographer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class="bx bx-palette"></i>
+                    <h3>Web Design</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class="bx bx-video-recording"></i>
+                    <h3>Videographer</h3>
+                </div>
+                <div class="circle"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png">
+        </div>
+     </section>
 
     <!-- about section design -->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png">
+        </div>
+        <div class="about-content">
+            <h2 class="heading"> About <span>Me</span></h2>
+            <h3>Hi, I'm Here To Help Your Next Project!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, placeat. Ipsa voluptatum officiis non quae. Iste dignissimos perspiciatis, dolorum aliquam, officiis unde odio suscipit voluptatum sapiente, nisi cupiditate est omnis!</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+     </section>
 
     <!-- services section design -->
+     <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum numquam accusamus assumenda? Enim, dolorem vero animi cumque quo adipisci cum?</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bx-bar-chart-alt"></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum numquam accusamus assumenda? Enim, dolorem vero animi cumque quo adipisci cum?</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum numquam accusamus assumenda? Enim, dolorem vero animi cumque quo adipisci cum?</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+     </section>
 
     <!-- portfolio section design -->
 

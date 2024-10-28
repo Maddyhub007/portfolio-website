@@ -11,11 +11,15 @@ window.onscroll = () => {
 
 
     /*========== sticky navbar ==========*/
+    let header=document.querySelector('.header');
 
+    header.classList.toggle('sticky',window.scrollY > 100);
+
+};
 
     /*========== remove menu icon navbar when click navbar link (scroll) ==========*/
 
-};
+
 
 
 /*========== swiper ==========*/
@@ -25,3 +29,18 @@ window.onscroll = () => {
 
 
 /*========== scroll reveal ==========*/
+
+// Scroll to top functionality
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollToTopButton.classList.remove('hidden');
+  } else {
+    scrollToTopButton.classList.add('hidden');
+  }
+});
+
+scrollToTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
