@@ -1,11 +1,11 @@
 /*========== menu icon navbar ==========*/
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+// let menuIcon = document.querySelector('#menu-icon');
+// let navbar = document.querySelector('.navbar');
 
 
 /*========== scroll sections active link ==========*/
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+// let sections = document.querySelectorAll('section');
+// let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
 
@@ -30,17 +30,3 @@ window.onscroll = () => {
 
 /*========== scroll reveal ==========*/
 
-// Scroll to top functionality
-const scrollToTopButton = document.getElementById('scrollToTop');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    scrollToTopButton.classList.remove('hidden');
-  } else {
-    scrollToTopButton.classList.add('hidden');
-  }
-});
-
-scrollToTopButton.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});

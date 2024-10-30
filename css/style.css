@@ -44,7 +44,7 @@ body{
     transition: .5s;
 }
 
-.header .sticky{
+.sticky{
     background: var(--bg-color);
     box-shadow: 0 .1rem 1rem var(--shadow-color);
 }
@@ -66,17 +66,17 @@ body{
 
 }
 
-.header .sticky .navbar a{
+.sticky .navbar a{
     color: var(--text-color);
 }
 
-.header .sticky .navbar a.active{
+.sticky .navbar a.active{
     color: var(--main-color);
 }
 
 
 
-.header .sticky .navbar a::before{
+.sticky .navbar a::before{
     background: var(--white-color);
     opacity: .7;
 }
@@ -98,14 +98,14 @@ body{
     cursor: pointer;
 }
 
-.header .sticky #darkMode-icon{
+.sticky #darkMode-icon{
     color: var(--text-color);
     opacity: .9;
 }
 
 section{
     min-height: 100vh;
-    padding: 10rem 7% 2 rem;
+    padding: 10rem 7% 2rem;
 
 }
 
@@ -303,9 +303,9 @@ span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
-
+    gap: 3rem;
 }
+
 
 .services-container .services-box{
     flex: 1 1 30rem;
@@ -319,7 +319,50 @@ span{
 }
 
 .services-box{
-    font-size: 7rem;
+    font-size: 2rem;
     color: var(--main-color);
     
+}
+
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
 }
