@@ -48,6 +48,11 @@ window.onscroll = () => {
 
 
 /*========== dark light mode ==========*/
+let darkModeIcon = document.querySelector('#darkMode-icon');
+
+darkModeIcon.onclick=()=>{
+    darkModeIcon.classList.toggle('bx-sun');
+};
 
 
 /*========== scroll reveal ==========*/
