@@ -40,13 +40,6 @@ window.onscroll = () => {
 };
 
 
-
-
-
-
-/*========== swiper ==========*/
-
-
 /*========== dark light mode ==========*/
 let darkModeIcon = document.querySelector('#darkMode-icon');
 
@@ -68,3 +61,19 @@ ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
 ScrollReveal().reveal('.home-content h1, .about-img img', {origin: 'left'});
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', {origin: 'right'});
 ScrollReveal().reveal('.home-img img, .services_container, .portfolio-box, .contact form, .services-box', {origin: 'bottom'});
+
+// form data capturing
+
+const form = document.getElementById('myForm');
+
+form.addEventListener('submit',function(event){
+    // event.preventDefault();
+    const formData = {
+        name: form.name.value,
+        email: form.email.value,
+        number: form.number.value,
+        text: form.text.value,
+        message: form.message.value,
+    };
+    console.log('Form Data submitted:', formData);
+});
