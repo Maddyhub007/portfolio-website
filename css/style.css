@@ -698,8 +698,10 @@ span{
         position: fixed;
         top: 60%;
         left: 0;
+        justify-content: center;
+        align-items: center;
         border-radius: 0;
-        width: 100%;
+        width: 135%;
     }
 
     .home .profession-box .profession{
@@ -728,14 +730,18 @@ span{
         position: fixed;
         width: 670px;
         height: 670px;
+        justify-content: center;
+        align-items: center;
         z-index: -1;
     }
 
     .home .profession-container .overlay{
         position: fixed;
         top: 70rem;
-        left: 50%;
+        left: 68.5%;
         right: 0;
+        justify-content: center;
+        align-items: center;
         transform: rotate(90deg) translate(-50%,50%) scaleY(3);
         border-width: 23.9rem;
     }
@@ -752,6 +758,7 @@ span{
     .about-img img{
         width: 70vw;
         margin-top: -2rem;
+        margin-left: -9rem;
     }
 
     .services h2,

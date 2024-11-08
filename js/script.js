@@ -66,8 +66,8 @@ ScrollReveal().reveal('.home-img img, .services_container, .portfolio-box, .cont
 
 const form = document.getElementById('myForm');
 
-form.addEventListener('submit',function(event){
-    // event.preventDefault();
+form.addEventListener('submit', function(event) {
+    // Create an object with the form data
     const formData = {
         name: form.name.value,
         email: form.email.value,
@@ -75,5 +75,14 @@ form.addEventListener('submit',function(event){
         text: form.text.value,
         message: form.message.value,
     };
+
+    // Log the form data to the console
     console.log('Form Data submitted:', formData);
+
+    // Reset the form fields
+    form.reset();
+
+    // Note: We are NOT using `event.preventDefault()`, so the form will submit
+    // and the page will refresh as usual after this line.
 });
+
