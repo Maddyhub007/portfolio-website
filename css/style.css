@@ -729,7 +729,7 @@ span{
     .home .profession-box .circle{
         position: fixed;
         width: 670px;
-        height: 670px;
+        height: 670px;  
         justify-content: center;
         align-items: center;
         z-index: -1;
@@ -738,7 +738,7 @@ span{
     .home .profession-container .overlay{
         position: fixed;
         top: 70rem;
-        left: 68.5%;
+        left: 76rem;
         right: 0;
         justify-content: center;
         align-items: center;
@@ -758,7 +758,7 @@ span{
     .about-img img{
         width: 70vw;
         margin-top: -2rem;
-        margin-left: -9rem;
+        margin-left: -6.5rem;
     }
 
     .services h2,
